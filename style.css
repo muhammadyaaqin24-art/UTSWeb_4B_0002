@@ -38,3 +38,9 @@ section {
 .dark-mode .navbar {
     background-color: #1a1a1a !important;
 }
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-color: #333;
+}
