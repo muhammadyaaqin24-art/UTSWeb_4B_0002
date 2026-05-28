@@ -34,3 +34,7 @@ section {
     background-color: #121212;
     color: #f0f0f0;
 }
+
+.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+}
