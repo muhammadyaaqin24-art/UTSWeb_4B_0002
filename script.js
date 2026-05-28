@@ -1,6 +1,7 @@
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projects = document.querySelectorAll('.project-item');
 const form = document.getElementById('contactForm');
+const toggleBtn = document.getElementById('darkModeToggle');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -29,3 +30,15 @@ form.addEventListener('submit', function(e) {
         form.reset();
     }
 }); 
+
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    const icon = toggleBtn.querySelector('i');
+
+    if (document.body.classList.contains('dark-mode')) {
+        icon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+    } else {
+        icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+    }
+});
