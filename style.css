@@ -52,3 +52,20 @@ section {
 .dark-mode footer {
     background-color: #0a0a0a !important;
 }
+
+.dark-mode .form-control {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #555;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #888;
+    box-shadow: none;
+}
