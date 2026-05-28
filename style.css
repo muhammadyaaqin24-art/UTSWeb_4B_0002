@@ -29,3 +29,8 @@ section {
 .card:hover {
     transform: translateY(-10px);
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
