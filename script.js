@@ -1,5 +1,6 @@
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projects = document.querySelectorAll('.project-item');
+const form = document.getElementById('contactForm');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -14,3 +15,17 @@ filterButtons.forEach(button => {
     });
 });
 
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name === '' || email === '' || message === ''){
+        alert('Please complate all fields!');
+    } else {
+        alert('Message Sent successfully!');
+        form.reset();
+    }
+}); 
