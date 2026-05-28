@@ -6,6 +6,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+section {
+    padding: 100px 0;
+}
+
 .hero {
     height: 100vh;
     background: linear-gradient(
