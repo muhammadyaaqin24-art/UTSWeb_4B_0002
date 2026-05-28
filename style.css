@@ -48,3 +48,7 @@ section {
 .dark-mode section.bg-light {
     background-color: #1a1a1a !important;
 }
+
+.dark-mode footer {
+    background-color: #0a0a0a !important;
+}
